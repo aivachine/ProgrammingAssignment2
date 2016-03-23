@@ -39,7 +39,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## created by makeCacheMatrix above. If the inverse has already been calculated, 
 ## then it should retrieve the inverse from the cache.
 
-cacheSolve <- function(x) {
+cacheSolve <- function(x, ...) {
   
   ## Check if the inverse was already stored
   i <- x$getInverse()
